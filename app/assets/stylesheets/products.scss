@@ -26,6 +26,7 @@ main section.categories-show {
         margin: auto;
         display: block;
       }
+      
 
       footer {
         position: absolute;
@@ -49,6 +50,19 @@ main section.categories-show {
         border-top-right-radius: 4px;
         border-bottom-left-radius: 20px;
         font-size: 0.8em;
+      }
+
+      aside.sold-out {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 12px;
+        background-color: rgb(235, 122, 122);
+        border-top-left-radius: 4px;
+        border-bottom-right-radius: 20px;
+        font-size: 0.9em;
+        color: white;
+        opacity: 0.8;
       }
 
       &:hover {
