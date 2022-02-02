@@ -4,10 +4,12 @@
     <h1>My Cart</h1>
   </header>
   <% if enhanced_cart.length() == 0 %> 
-    <h4>
-      <strong>Your cart is empty!!</strong> 
-    </h4>
-    <a class="btn btn-primary" href="/" role="button">Home Page</a>
+   <div class="alert alert-primary" role="alert">
+     <h4>
+     <strong>Your cart is empty!</strong> <a href="/" class="alert-link">Click me!</a> to rediect to home page.
+     </h4>
+  </div>
+   
   <% else %>
     <div class="panel panel-default items">
     <table class="table table-bordered">
