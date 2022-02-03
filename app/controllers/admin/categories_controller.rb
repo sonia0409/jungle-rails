@@ -1,7 +1,7 @@
 class Admin::CategoriesController < ApplicationController
 
     def index
-        @categories = Category.order(id: :desc).all
+        @categories = Category.order(id: :desc)
       end
 
     def new
@@ -13,7 +13,7 @@ class Admin::CategoriesController < ApplicationController
 
         if @category.save
             redirect_to [:admin, :categories], notice: 'Category created'
-        else
+        else    
             render :new
         end  
     end
