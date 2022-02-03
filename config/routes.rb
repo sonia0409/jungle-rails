@@ -13,8 +13,16 @@ Rails.application.routes.draw do
 
   resources :orders, only: [:create, :show]
 
-  resources :users, only: [:new, :create]
-  resources :sessions, only: [:new, :create, :destroy]
+  #resources :users, only: [:new, :create]
+  #resources :sessions, only: [:new, :create, :destroy]
+   # these routes are for showing users a login form, logging them in, and logging them out.
+   get '/login' => 'sessions#new'
+   post '/login' => 'sessions#create'
+   get '/logout' => 'sessions#destroy'
+ 
+   get '/signup' => 'users#new'
+   post '/users' => 'users#create'
+
 
   namespace :admin do
     root to: 'dashboard#show'
