@@ -46,6 +46,11 @@ group :development, :test do
   gem 'dotenv-rails'
 end
 
+group :development, :test do
+  gem 'rspec-rails', '~> 3.5'
+  # rspec-rails brings the RSpec testing framework to Ruby on Rails as a drop-in alternative to its default testing framework, Minitest. 
+end
+
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
